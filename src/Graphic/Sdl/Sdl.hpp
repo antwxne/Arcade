@@ -13,30 +13,106 @@
 #include <map>
 #include "../ADisplayModule.hpp"
 
+/**
+ * @brief arcade's objects
+ * @namespace arcade
+ * 
+ */
 namespace arcade {
+/**
+ * @brief sdl2 encapsulation
+ * @class SDLModule
+ * 
+ */
 class SDLModule : public arcade::ADisplayModule {
 public:
+    /**
+     * @brief Construct a new SDLModule object
+     * 
+     */
     SDLModule();
+    /**
+     * @brief Destroy the SDLModule object
+     * 
+     */
     ~SDLModule() override;
 
+    /**
+     * @brief init a window
+     * 
+     */
     void init() override;
+    /**
+     * @brief destroy a window
+     * 
+     */
     void destroy() override;
+    /**
+     * @brief draw objects
+     * 
+     * @param drawable 
+     * @param position 
+     * @param name 
+     */
     void draw(std::vector<std::shared_ptr<IDrawable>> drawable,
         std::pair<int, int> position, const std::string &name
     ) override;
+    /**
+     * @brief manage events
+     * 
+     * @return events_e 
+     */
     events_e pollEvent() override;
+    /**
+     * @brief load textures
+     * 
+     * @param drawable 
+     * @param name 
+     */
     void load(std::vector<std::shared_ptr<IDrawable>> drawable,
         const std::string &name
     ) override;
+    /**
+     * @brief refresh window
+     * 
+     */
     void refreshWin() override;
+    /**
+     * @brief clear window
+     * 
+     */
     void clearWin() override;
+    /**
+     * @brief Get the Form object
+     * 
+     * @param str 
+     * @return std::string 
+     */
     std::string getForm(std::string str) override;
+    /**
+     * @brief draw text
+     * 
+     * @param string 
+     * @param position 
+     */
     void drawText(const std::string &string, std::pair<int, int> position
     ) override;
 
 private:
+    /**
+     * @brief sdl renderer
+     * 
+     */
     SDL_Renderer *_renderer;
+    /**
+     * @brief window
+     * 
+     */
     SDL_Window *_window;
+    /**
+     * @brief window status
+     * 
+     */
     bool _status;
 };
 }

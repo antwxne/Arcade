@@ -11,3 +11,5 @@ unit_tests
 games
 lib
 configFiles
+Documentation/html
+Documentation/latex

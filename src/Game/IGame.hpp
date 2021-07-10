@@ -44,7 +44,7 @@ public:
      */
     virtual const std::string &getName() const = 0;
     /**
-     * @brief check if the game if lost
+     * @brief check if the game is lose
      * 
      * @return true 
      * @return false 
