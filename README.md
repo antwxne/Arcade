@@ -108,7 +108,7 @@ It generate documentation and launch a html preview.
 
 You can change game's textures at runtime.
 
-To do so you need to use 50 x 50 images place them in resources folder and name it like this:
+To do so you need to use **50px x 50px** images place them in `./resources` folder and name it like this:
 
 Object | Name
 ------------ | -------------
