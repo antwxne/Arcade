@@ -19,7 +19,13 @@ We used the _SFML_, _SDL2_ and _ncurses_ graphical libraries.
 We needed to follow the following architecture:
 
 <p align="center">
-    <img src=".github/readme_resources/previews/subject_info_archi.png" width="200">
+    <img src=".github/readme_resources/previews/subject_info_archi.png" width="300">
+</p>
+
+If you want to implement your game or graphical library, please use our abstraction and read the documentation:
+
+<p align="center">
+    <img src=".github/readme_resources/our_archi.png">
 </p>
 
 <h2>Previews</h2>
