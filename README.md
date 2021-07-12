@@ -1,23 +1,25 @@
 # Arcade
 
->Arcade is a gaming platform: a program that lets the user choose a game to play and keeps a register of
-player scores.
-To be able to deal with the elements of your gaming plate-
-form at run-time, your graphics libraries and your games
-must be implemented as dynamic libraries, loaded at run-
-time.
+> Arcade is a gaming platform: a program that lets the user choose a game to play and keeps a register of player scores. To be able to deal with the elements of your gaming plate- form at run-time, your graphics libraries and your games must be implemented as dynamic libraries, loaded at run- time.
 
 We used the _SFML_, _SDL2_ and _ncurses_ graphical libraries.
 
 <p align="center">
   <a href="https://www.sfml-dev.org/index.php">
-    <img src=".github/readme_resources/Logos/logo_sfml.png" width="288px">
+    <img src=".github/readme_resources/Logos/logo_sfml.png" width="200">
+  </a>
+  <a href="https://www.libsdl.org/">
+    <img src=".github/readme_resources/Logos/sdl_logo.png" width="200">
+  </a>
+  <a href="https://invisible-island.net/ncurses/announce.html">
+    <img src=".github/readme_resources/Logos/ncurses_logo.svg" width="200">
   </a>
 </p>
+
+We needed to follow the following architecture:
+
 <p align="center">
-  <a href="https://github.com/SFML/CSFML/releases/tag/2.5">
-    <img src="https://img.shields.io/github/v/release/SFML/SFML?label=SFML%20Version&style=for-the-badge">
-  </a>
+    <img src=".github/readme_resources/previews/subject_info_archi.png" width="200">
 </p>
 
 <h2>Previews</h2>
@@ -56,16 +58,18 @@ We used the _SFML_, _SDL2_ and _ncurses_ graphical libraries.
 
 ### SFML >= 2.5
 
-To install SFML please refer to the [installation guide](https://www.sfml-dev.org/download/sfml/2.5.1/index-fr.php)
+To install SFML please refer to
+the [installation guide](https://www.sfml-dev.org/download/sfml/2.5.1/index-fr.php)
 
 ### SDL2
 
-To install SDL2 please refer to the [installation guide](https://www.libsdl.org/download-2.0.php)
-
+To install SDL2 please refer to
+the [installation guide](https://www.libsdl.org/download-2.0.php)
 
 ### Ncurses
 
-To install ncurses library please refer to the [installation guide](https://invisible-island.net/ncurses/)
+To install ncurses library please refer to
+the [installation guide](https://invisible-island.net/ncurses/)
 
 ## Build and run
 
@@ -93,6 +97,22 @@ make doc-firefox
 ```
 
 It generate documentation and launch a html preview.
+
+## Bonus
+
+You can change game's textures at runtime.
+
+To do so you need to use 50 x 50 images place them in resources folder and name it like this:
+
+Object | Name
+------------ | -------------
+Apple | `apple.png`
+Ball | `ball.png`
+Enemies | `enemi.png`
+Player | `player.png`
+Pac gum | `special.png`
+Wall | `wall.jpeg`
+
 
 ## Contributors
 
