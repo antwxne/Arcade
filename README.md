@@ -1,4 +1,4 @@
-# Arcade ![cpp](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+# Arcade ![cpp](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![sfml](https://img.shields.io/badge/SFML-8CC445?style=for-the-badge&logo=SFML&logoColor=white) ![sdl2](https://img.shields.io/badge/SDL2-A42E2B?style=for-the-badge&logo=GNU&logoColor=white) ![ncurses](https://img.shields.io/badge/Ncurses-000000?style=for-the-badge&logo=GNU&logoColor=white)
 
 > Arcade is a gaming platform: a program that lets the user choose a game to play and keeps a register of player scores. To be able to deal with the elements of your gaming plate- form at run-time, your graphics libraries and your games must be implemented as dynamic libraries, loaded at run- time.
 
